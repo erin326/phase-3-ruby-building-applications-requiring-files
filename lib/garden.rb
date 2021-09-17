@@ -1,4 +1,5 @@
 # Something is missing here
+require_relative './plant'
 
 class Garden
   attr_accessor :name
@@ -23,3 +24,6 @@ cucumber = Plant.new(name: 'Cucumber')
 cucumber.garden = lawn
 
 p lawn.plants
+
+
+#require and require_relative will not load local variables -- only methods, modules, and classes.
